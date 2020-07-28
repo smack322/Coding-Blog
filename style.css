@@ -1,0 +1,46 @@
+li {
+    color: blue;
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "nav"
+}
+
+.main-nav {
+    grid-area: nav;
+}
+
+@media (min-width: 500px) {
+    .container {
+        grid-template-columns: 4fr 2fr;
+        grid-template-areas:
+        "nav    nav"
+
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+#advertisement {
+    background-color: gray;
+}
+
+html {
+    background-color: teal;
+}
+
+img {
+    width: 75%;
+    justify-content: center;
+}
+
+#blog-img {
+    display: flex;
+    justify-content: center;
+}
