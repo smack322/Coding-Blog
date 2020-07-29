@@ -29,6 +29,7 @@ li {
 
 #advertisement {
     background-color: gray;
+    border-right: dotted;
 }
 
 html {
@@ -41,6 +42,17 @@ img {
 }
 
 #blog-img {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    position: absolute;
+    top: 15;
+    right: 10;
+}
+
+.advertisement-txt {
     display: flex;
     justify-content: center;
 }
