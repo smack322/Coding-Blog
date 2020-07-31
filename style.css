@@ -1,5 +1,5 @@
 li {
-    color: blue;
+    color: white;
 }
 
 .container {
@@ -13,6 +13,7 @@ li {
 
 .main-nav {
     grid-area: nav;
+    background-color: teal;
 }
 
 @media (min-width: 500px) {
@@ -20,6 +21,8 @@ li {
         grid-template-columns: 4fr 2fr;
         grid-template-areas:
         "nav    nav"
+        "section section"
+        "aside aside"
 
     }
     nav ul {
@@ -101,7 +104,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: blue;
+  color: white;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -160,5 +163,29 @@ img {vertical-align: middle;}
 
 .social-media {
     padding: 20px;
+}
+
+.asides {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* aside {
+    border: 1px solid black;
+} */
+
+#aside1 {
+    /* margin-top: 10%; */
+    align-self: end;
+}
+
+#aside2 {
+    /* margin-top: 35%; */
+    align-self: center;
 }
 
