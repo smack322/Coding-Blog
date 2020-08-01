@@ -41,7 +41,7 @@ html {
 }
 
 img {
-    width: 75%;
+    width: 100%;
     justify-content: center;
 }
 
@@ -162,11 +162,10 @@ img {vertical-align: middle;}
 }
 
 .social-media {
-    padding: 20px;
+    padding: .3em;;
 }
 
 .asides {
-    border: 1px solid black;
     height: 200px;
     width: 200px;
     margin: 0 auto;
@@ -181,7 +180,8 @@ img {vertical-align: middle;}
 
 #aside1 {
     /* margin-top: 10%; */
-    align-self: end;
+    /* align-self: end; */
+    width: 75%;
 }
 
 #aside2 {
