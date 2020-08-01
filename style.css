@@ -1,5 +1,6 @@
 li {
     color: white;
+    text-transform: uppercase;
 }
 
 .container {
@@ -32,8 +33,7 @@ li {
 }
 
 #advertisement {
-    background-color: gray;
-    border-right: dotted;
+    background-color: rgb(185, 185, 185);
 }
 
 html {
@@ -189,3 +189,27 @@ img {vertical-align: middle;}
     align-self: center;
 }
 
+#right-arrow {
+    padding-left: 60rem;
+    height: 10px;
+    width: 10px;
+}
+
+#go-daddy {
+    color: rgb(13, 89, 112);
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+#advertisement .advertisement-icns {
+    /* display: inline-block; */
+    float: right;
+}
+
+#title {
+    text-transform: uppercase;
+    color: red;
+    letter-spacing: -.05em;
+}
