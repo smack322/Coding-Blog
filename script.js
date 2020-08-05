@@ -28,3 +28,14 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+//function to condense the navbar when the screen size shrinks
+
+function shrinkNavBar() {
+    var nav = document.getElementById("main-nav");
+    if(nav.className === "main-nav") {
+        nav.className += "responsive";
+    } else {
+        nav.className = "main-nav";
+    }
+}

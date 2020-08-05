@@ -34,6 +34,11 @@ nav ul li:hover{
         display: flex;
         justify-content: space-evenly;
     }
+    .main-nav a:not(:first-child) {display: none;}
+    .main-nav a.icon {
+        float: right;
+        display: block;
+    }  
 }
 
 @media (max-width: 700px) {
@@ -43,9 +48,18 @@ nav ul li:hover{
     "section"
     "aside";
     }
-    nav ul {
-        display: flex;
-        justify-content: space-evenly;
+    .main-nav .responsive {
+        position: relative;
+    }
+    .main-nav .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .main-nav .responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
 
@@ -53,10 +67,6 @@ nav ul li:hover{
 
 #advertisement {
     background-color: rgb(185, 185, 185);
-}
-
-html {
-    background-color: teal;
 }
 
 img {
@@ -233,11 +243,6 @@ img {vertical-align: middle;}
     text-transform: uppercase;
     font-weight: 800;
 
-}
-
-#advertisement .advertisement-icns {
-    /* display: inline-block; */
-    /* text-align: right; */
 }
 
 #title {
