@@ -4,6 +4,10 @@ li {
     font-family: 'Times New Roman', Times, serif;
 }
 
+nav ul li:hover{
+    color: white;
+}
+
 .container {
     background-color: white;
     display: grid;
@@ -18,15 +22,12 @@ li {
     background-color: teal;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     .container {
-        /* grid-template-columns: 2fr, 1fr; */
-        /* grid-template-columns: 4fr, 2fr;
-        grid-template-rows: repeat(auto-fit, minmax(1fr, 1fr)); */
         grid-template-areas:
         "nav    nav"
-        "section section"
-        "aside aside"
+        "section    section"
+        "aside  aside";
 
     }
     nav ul {
@@ -35,19 +36,20 @@ li {
     }
 }
 
-/* @media (min-width: 900px) {
+@media (max-width: 700px) {
     .container {
-        grid-template-columns: 4fr 2fr;
-        grid-template-areas: 
-        "nav nav"
-        "section section"
-        "aside aside"
+    grid-template-areas: 
+    "nav"
+    "section"
+    "aside";
     }
     nav ul {
         display: flex;
         justify-content: space-evenly;
     }
-} */
+}
+
+
 
 #advertisement {
     background-color: rgb(185, 185, 185);
@@ -95,12 +97,12 @@ img {vertical-align: middle;}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: blue;
   background-color: gray;
   font-weight: bold;
   font-size: 18px;
